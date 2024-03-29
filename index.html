@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NiX</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/b94012dfdb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Servives</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fas fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi, I am <span> Naseer </span>Ahmed<br /></h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- about section -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/first.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Eager Web Developer in the process of mastering ReactJS, Node.js,
+              and PostgreSQL. Driven to enhance my skills and build
+              user-friendly web applications. Adept at both teamwork and
+              independent work, with a strong ability to adapt to new challenges
+              and technologies.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <!-- <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p> -->
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span> Front-end </span><br />Desining Web front-end using
+                  React.JS
+                </li>
+                <li>
+                  <span> Back-end </span><br />Back-end using Express.JS with
+                  Node.JS
+                </li>
+                <li>
+                  <span> Database </span><br />Managing data using PostgreSQL
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="tab-contents" id="experience">
+              <ul>
+                <li><span> 2021 - current </span><br />somewhere in Udemy</li>
+                <li><span> 2019 - 2021 </span><br />somewhere in Udemy</li>
+                <li><span> 2017 - 2019 </span><br />somewhere in Udemy</li>
+              </ul>
+            </div> -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span> 2018-2022 </span><br />Completed my B.tech in ECE with 7.5 CGPA.</li>
+                <li><span> 2018 </span><br />Completed my 12th in Kendriya Vidyalaya with 75.8%.</li>
+                <li><span> 2015 </span><br />Completed my 10th in Kendriya Vidyalaya with 8.4 CGPA.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------------------- services section -------------------------->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>front-end</h2>
+            <p>
+              Learned frontend dev using HTML, CSS, JS and it's libraries(JQuery and React.js).
+            </p>
+            <!-- <a href="#">learn more.</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-layer-group"></i>
+            <h2>back-end</h2>
+            <p>
+              Learned backend using Express.js with Node.js and EJS.
+            </p>
+            <!-- <a href="#">learn more.</a> -->
+          </div>
+          <div>
+            <i class="fa-brands fa-dev"></i>
+            <h2>full stack</h2>
+            <p>
+              Full-Stack development using React.js, Node,js and PostgreSQL.
+            </p>
+            <!-- <a href="#">learn more.</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------------Projects-------------->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/w1.png" alt="" />
+            <div class="layer">
+              <h3>Tin Dog</h3>
+              <p>A tinder page for Dogs.</p>
+              <a href="https://naseer1105.github.io/Tin-Dog/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/w2.png" alt="" />
+            <div class="layer">
+              <h3>Drum Kit</h3>
+              <p>Let those keys make sound.</p>
+              <a href="https://naseer1105.github.io/Drum-kit/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/w3.png" alt="" />
+            <div class="layer">
+              <h3>Simon Game</h3>
+              <p>Let's test your memory and concentration.</p>
+              <a href="https://naseer1105.github.io/Simon-game/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/naseer1105" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- ----------------------------contact------------------------------ -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>sk.naseerahmed01@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>+917842121055</p>
+            <div class="social-icons">
+              <a href="https://linkedin.com/in/naseer-ahmed-shaik-704b5a2b3"
+                ><i class="fab fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/naseer1105"><i class="fab fa-brands fa-git"></i></a>
+              <a href="https://wa.me/qr/LX27LK6HHED2F1"><i class="fab fa-whatsapp-square"></i></i></a>
+            </div>
+            <a href="images/resume.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form action="#" name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="10"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Naseer.</p>
+      </div>
+    </div>
+
+    <!-- -------------------JS----------------- -->
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+      var sidemenu = document.getElementById("sidemenu");
+      function openMenu() {
+        sidemenu.style.right = "0";
+      }
+      var sidemenu = document.getElementById("sidemenu");
+      function closeMenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzeYr1QZNtXQG2OoBkppy8cUcL_U7B1-VQ-jyALBSlqb5Xk99GwMCZF7PEtTMLEft4A7Q/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
